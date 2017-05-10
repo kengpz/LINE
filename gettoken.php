@@ -30,12 +30,17 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "id = " .$arrJson['events'][0]['source']['userId'];
+  $arrPostData['messages'][0]['text'] = "userId = " .$arrJson['events'][0]['source']['userId'];
 }else if($arrJson['events'][0]['message']['text'] == "2"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "id = " .$arrJson['events'][0]['source']['groupId'];
+  $arrPostData['messages'][0]['text'] = "groupId = " .$arrJson['events'][0]['source']['groupId'];
+}else if($arrJson['events'][0]['message']['text'] == "3"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = 'C38b5b940c47dade38c04eb701a98208b';
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
