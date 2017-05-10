@@ -14,12 +14,12 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
-			$replyToken = 'ad529fd59d73429c9d57318ca3b5600e';
+			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text . $replyToken
+				'text' => $text . $event['events'][0]['source']['userId'];
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
