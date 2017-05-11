@@ -14,7 +14,7 @@
       <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
 
       <br><br><br><br><br><br>
-      <input type="submit" value="Enter" style="width:100px;">
+      <input type="submit" value="Enter" style="width:100px;" autofocus>
     </div>
   </div>
 </form>
