@@ -7,8 +7,8 @@
 </head>
 <body>
  
-<form action="/" id="searchForm">
-  <input type="text" name="msg" id="msg" placeholder="Search...">
+<form action="/" id="priceForm">
+  <input type="text" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
   <input type="submit" value="Search">
 </form>
 <!-- the result of the search will be rendered inside this div -->
@@ -16,7 +16,7 @@
  
 <script>
 // Attach a submit handler to the form
-$( "#searchForm" ).submit(function( event ) {
+$( "#priceForm" ).submit(function( event ) {
  
   // Stop form from submitting normally
   event.preventDefault();
