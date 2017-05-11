@@ -3,27 +3,17 @@
 <head></head>
 <body>   
 <div class="content">
-    <form action="push.php" method="POST">
-        <label>Name: </label>
-        <input name="name" type="text" size="25" />
+    <form id="priceForm" name="priceForm" action="push.php" method="POST">
+        <label>Message: </label>
+        <input name="msg" type="text" /><br><br>
 
-        <label>Course: </label>
-        <input name="course" type="text" size="25" />
-
-        <label>Book: </label>
-        <input name="msg" type="text" size="255" />
-
-        <label>Price: </label>
-        <input name="price" type="text" size="7" />
-
-        <label>Email: </label>
-        <input name="email" type="text" size="255" />
-
-        <label>Phone #: </label>
-        <input name="phone" type="text" size="12" />
-
-        <input name="mySubmit" type="submit" value="Submit!" />
+        <input name="send" type="send" value="Send!" />
     </form>
 </div>
 </body>
+    <script type="text/javascript" charset="utf-8">
+			$("#send").click(function() {
+				$("#priceForm").submit();
+			});
+	</script>
 </html>
