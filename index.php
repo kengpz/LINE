@@ -8,8 +8,15 @@
 <body>
  
 <form action="/" id="priceForm">
-  <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
-  <input type="submit" value="Enter" style="width:100px;">
+  <div class = "container"> 
+     <div class = "form_group" align="center">   
+      <label>ราคา : </label>  
+      <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
+
+      <br><br><br><br><br><br>
+      <input type="submit" value="Enter" style="width:100px;">
+    </div>
+  </div>
 </form>
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
