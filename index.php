@@ -9,7 +9,7 @@
  
 <form action="/" id="priceForm">
   <input type="text" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
-  <input type="submit" value="Search">
+  <input type="submit" value="Search" style="width:100px;">
 </form>
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
