@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Muaythai Demo</title>
-  <script src="jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
  
