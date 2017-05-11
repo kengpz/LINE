@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>jQuery.post demo</title>
+  <title>Muaythai Demo</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
  
 <form action="/" id="priceForm">
-  <input type="text" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
-  <input type="submit" value="Search" style="width:100px;">
+  <input type="number" pattern="[0-9]*" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
+  <input type="submit" value="Enter" style="width:100px;">
 </form>
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
