@@ -8,7 +8,7 @@
 <body>
  
 <form action="/" id="priceForm">
-  <input type="number" pattern="[0-9/*#.]*" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
+  <input type="text" pattern="[0-9RBD*#/]{3,}" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
   <input type="submit" value="Enter" style="width:100px;">
 </form>
 <!-- the result of the search will be rendered inside this div -->
