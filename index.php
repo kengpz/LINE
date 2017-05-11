@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" http-equiv="refresh" content="10;http://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php">
   <title>Muaythai Demo</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -11,7 +11,7 @@
   <div class = "container"> 
      <div class = "form_group" align="center">   
       <label>ราคา : </label>  
-        <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่"><br>
+        <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่"><br><br>
         <input type="radio" name="corner" value="red" selected> แดง<t>
         <input type="radio" name="corner" value="draw"> เสมอ<t>
         <input type="radio" name="corner" value="blue"> น้ำเงิน
