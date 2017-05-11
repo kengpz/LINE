@@ -8,6 +8,7 @@
 </li></ul>
 
 	<div >
+	Message :  <br>
 	<input type="submit" value="Submit" class="submit"/>
 	<span class="error" style="display:none"> Please Enter Valid Data</span>
 	<span class="success" style="display:none"> Registration Successfully</span>
@@ -27,7 +28,7 @@ if(name==''){
 }else {
 	$.ajax({
 	type: "POST",
-	url: "https://muaythaijklsx.herokuapp.com/push.php",
+	url: "push.php",
 	data: name,
 	success: function(){
 		$('.success').fadeIn(200).show();
