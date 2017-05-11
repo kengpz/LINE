@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<form method="post" name="form">
+<form method="post" name="form" action="push.php">
 <ul><li>
 <input id="msg" name="msg" type="text" />
 </li></ul>
