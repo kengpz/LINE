@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" http-equiv="refresh" content="10;http://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php">
+  <meta charset="utf-8">
   <title>Muaythai Demo</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -34,11 +34,12 @@ $( "#priceForm" ).submit(function( event ) {
  
   // Get some values from elements on the page:
   var $form = $( this ),
-    term = $form.find( "input[name='msg']" ).val(),
+    price = $form.find( "input[name='msg']" ).val(),
+    corner = $form.find( "input[name='corner']" ).val(),
     url = "push.php";
  
   // Send the data using post
-  var posting = $.post( url, { msg: term } );
+  var posting = $.post( url, { msg: price , corner: corner} );
  
   // Put the results in a div
   posting.done(function( data ) {
