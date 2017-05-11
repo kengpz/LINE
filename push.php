@@ -11,7 +11,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['to'] = "C38b5b940c47dade38c04eb701a98208b";
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = $msg;
+$arrPostData['messages'][0]['text'] = "Send message : " . $msg ;
  
  
 $ch = curl_init();
