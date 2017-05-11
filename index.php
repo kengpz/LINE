@@ -35,11 +35,10 @@ $( "#priceForm" ).submit(function( event ) {
   // Get some values from elements on the page:
   var $form = $( this ),
     price = $form.find( "input[name='msg']" ).val(),
-    corner = $form.find( "input[name='corner']" ).val(),
     url = "push.php";
- 
+  
   // Send the data using post
-  var posting = $.post( url, { msg: price , corner: corner} );
+  var posting = $.post( url, { msg: price} );
  
   // Put the results in a div
   posting.done(function( data ) {
