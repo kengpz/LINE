@@ -11,7 +11,10 @@
   <div class = "container"> 
      <div class = "form_group" align="center">   
       <label>ราคา : </label>  
-      <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่">
+        <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่"><br>
+        <input type="radio" name="corner" value="red" selected> แดง<t>
+        <input type="radio" name="corner" value="draw"> เสมอ<t>
+        <input type="radio" name="corner" value="blue"> น้ำเงิน
 
       <br><br><br><br><br><br>
       <input type="submit" value="Enter" style="width:100px;" autofocus>
@@ -22,7 +25,7 @@
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
  
-<script>
+<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
 $( "#priceForm" ).submit(function( event ) {
  
