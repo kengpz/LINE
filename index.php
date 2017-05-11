@@ -1,43 +1,41 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.post demo</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
 <body>
-
-<form method="post" name="form" action="push.php">
-<ul><li>
-<input id="msg" name="msg" type="text" />
-</li></ul>
-
-	<div >
-	Message :  <br>
-	<input type="submit" value="Submit" class="submit"/>
-	<span class="error" style="display:none"> Please Enter Valid Data</span>
-	<span class="success" style="display:none"> Registration Successfully</span>
-	</div>
+ 
+<form action="/" id="searchForm">
+  <input type="text" name="msg" id="msg" placeholder="Search...">
+  <input type="submit" value="Search">
 </form>
-
-</body>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
-<script type="text/javascript" >
-$(function() {
-$(".submit").click(function() {
-var name = $("#msg").val();
-
-if(name==''){
-	$('.success').fadeOut(200).hide();
-	$('.error').fadeOut(200).show();
-}else {
-	$.ajax({
-	type: "POST",
-	url: "push.php",
-	data: name,
-	success: function(){
-		$('.success').fadeIn(200).show();
-		$('.error').fadeOut(200).hide();
-		}
-	});
-}
-return false;
-});
+<!-- the result of the search will be rendered inside this div -->
+<div id="result"></div>
+ 
+<script>
+// Attach a submit handler to the form
+$( "#searchForm" ).submit(function( event ) {
+ 
+  // Stop form from submitting normally
+  event.preventDefault();
+ 
+  // Get some values from elements on the page:
+  var $form = $( this ),
+    term = $form.find( "input[name='msg']" ).val(),
+    url = "push.php";
+ 
+  // Send the data using post
+  var posting = $.post( url, { msg: term } );
+ 
+  // Put the results in a div
+  posting.done(function( data ) {
+    var content = $( data ).find( "#content" );
+    $( "#result" ).empty().append( content );
+  });
 });
 </script>
+ 
+</body>
 </html>
