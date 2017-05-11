@@ -15,6 +15,7 @@
 
       <br><br><br><br><br><br>
       <input type="submit" value="Enter" style="width:100px;" autofocus>
+       <input type="reset" value="Reset" style="width:100px;">
     </div>
   </div>
 </form>
