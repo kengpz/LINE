@@ -16,7 +16,7 @@
         <input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 
         <br><br><br>
-	     <button onclick="myFunction()">up</button>
+	     <button onclick="up()">up</button>
 	     <button onclick="down()">down</button>
 	<br><br><br>
       <input type="submit" value="Enter" style="width:100px;" autofocus>
@@ -57,14 +57,9 @@ $( "#priceForm" ).submit(function( event ) {
 	return null;
 }
 function up() {
- document.getElementById("msg").stepUp(1);
+ document.forms['priceForm']['msg'].stepUp(1);
 }
-function down() {
- document.getElementById("msg").stepUp(-1);
-}
-function myFunction() {
-    document.getElementById("msg").stepUp(1);
-}
+
 </script>
  
 </body>
