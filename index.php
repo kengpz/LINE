@@ -11,7 +11,7 @@
   <div class = "container"> 
      <div class = "form_group" align="center">   
       <label>ราคา : </label>  
-        <input type="tel" name="msg" id="msg"><br><br>
+        <input type="number" name="msg" id="msg"><br><br>
         <input type="radio" name="corner" value="แดงต่อ" checked> แดง
         <input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 
@@ -59,7 +59,9 @@ $( "#priceForm" ).submit(function( event ) {
 function up() {
  document.forms['priceForm']['msg'].stepUp(1);
 }
-
+function down() {
+ document.forms['priceForm']['msg'].stepUp(-1);
+}
 </script>
  
 </body>
