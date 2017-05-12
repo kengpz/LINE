@@ -24,8 +24,8 @@
   <div>
     <input type="text" name="msg">
     <input type="submit"><br>
-    <input type="radio" name="corner" id="corner" value="Red" checked> 1
-	  <input type="radio" name="corner" id="corner" value="Blue"> 2
+    <input type="radio" name="corner" id="corner" value="แดงต่อ" checked> 1
+    <input type="radio" name="corner" id="corner" value="น้ำเงินต่อ"> 2
   </div>
 </form>
 <span></span>
@@ -33,25 +33,22 @@
 <script>
 $( "form" ).submit(function( event ) {
 var co = getRadioVal("corner");
-  if ( $( "input:first" ).val() === "correct" ) {
-    $( "span" ).text( "Corner..." .$co ).show();
+  if ( $( "input:first" ).val() !== "" ) {
+    $( "span" ).text("".$co.$msg ).show();
     return;
   }
- 
-  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+
   event.preventDefault();
 });
 
 function getRadioVal(radioName) {
-			  var rads = document.getElementsByName(radioName);
-
-			for ( var rad in rads) {
-					if (rads[rad].checked)
-						return rads[rad].value;
-				}
-
-			return null;
-		}
+	var rads = document.getElementsByName(radioName);
+	for ( var rad in rads) {
+	 if (rads[rad].checked)
+	  return rads[rad].value;
+	 }
+	return null;
+	}
 </script>
  
 </body>
