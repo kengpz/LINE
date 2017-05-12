@@ -16,7 +16,7 @@
 				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน <br> <br> <br>
 				<br> <br> <br> 
 
-				<input type="submit" name="Send" value="Enter" style="width: 100px;" autofocus>
+				<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
 			</div>
 		</div>
 	</form>
@@ -30,25 +30,28 @@
 
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
-		$( "#priceForm" ).submit(function( event ) {
-			var co = getRadioVal("corner");
-			// Stop form from submitting normally
-			event.preventDefault();
-		 
-			// Get some values from elements on the page:
-			var $form = $( this ),
-				price = $form.find( "input[name='msg']" ).val(),
-				url = "push.php";
-		
-		  // Send the data using post
-		 	 var posting = $.post( url, { msg: price, corner: co} );
-		 
-		  // Put the results in a div
-		  	posting.done(function( data ) {
-			var content = $( data ).find( "#content" );
-			$( "#result" ).empty().append( content );
-		  	});
+		$("#Send").click(function() {
+			$("#priceForm").submit(function( event ) {
+					var co = getRadioVal("corner");
+					// Stop form from submitting normally
+					event.preventDefault();
+ 
+					// Get some values from elements on the page:
+					var $form = $( this ),
+						price = $form.find( "input[name='msg']" ).val(),
+						url = "push.php";
+					
+				  // Send the data using post
+					 var posting = $.post( url, { msg: price, corner: co} );
+					 
+					  // Put the results in a div
+				  	posting.done(function( data ) {
+						var content = $( data ).find( "#content" );
+					$( "#result" ).empty().append( content );
+			});
 		});
+
+		
 
  function getRadioVal(radioName) {
 	var rads = document.getElementsByName(radioName);
