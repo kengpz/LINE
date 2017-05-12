@@ -27,7 +27,7 @@ $('#submit').click(function(){
  var co = getRadioVal("corner");
  var msg =  document.getElementById("msg").value;
  $.post('push.php',$('#sample-form').serialize(),function(response){
-   document.getElementById("result").innerHTML = $co . $msg;
+   $('#result').html(response);
  });
 });
 
