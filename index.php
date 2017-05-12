@@ -31,24 +31,23 @@
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
 		$("#Send").click(function() {
-			$("#priceForm").submit(function( event ) {
-					var co = getRadioVal("corner");
-					// Stop form from submitting normally
-					event.preventDefault();
+			var co = getRadioVal("corner");
+			// Stop form from submitting normally
+			event.preventDefault();
  
-					// Get some values from elements on the page:
-					var $form = $( this ),
-						price = $form.find( "input[name='msg']" ).val(),
-						url = "push.php";
+			// Get some values from elements on the page:
+			var $form = $( this ),
+				price = $form.find( "input[name='msg']" ).val(),
+				url = "push.php";
 					
-				  // Send the data using post
-					 var posting = $.post( url, { msg: price, corner: co} );
-					 
-					  // Put the results in a div
-				  	posting.done(function( data ) {
-						var content = $( data ).find( "#content" );
-					$( "#result" ).empty().append( content );
-			});
+			// Send the data using post
+			var posting = $.post( url, { msg: price, corner: co} );
+			
+			// Put the results in a div
+			posting.done(function( data ) {
+				var content = $( data ).find( "#content" );
+			$( "#result" ).empty().append( content );
+			$("#priceForm").submit();
 		});
 
 		
