@@ -20,7 +20,7 @@
 <body>
  
 <p>Type 'correct' to validate.</p>
-<form action="push.php">
+<form action="push.php" method="POST">
   <div>
     <input type="text">
     <input type="submit"><br>
@@ -34,7 +34,7 @@
 $( "form" ).submit(function( event ) {
 var co = getRadioVal("corner");
   if ( $( "input:first" ).val() === "correct" ) {
-    $( "span" ).text( "Validated..." ).show();
+    $( "span" ).text( "Corner..." .$co ).show();
     return;
   }
  
