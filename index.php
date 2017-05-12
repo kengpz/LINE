@@ -12,7 +12,7 @@
      <div class = "form_group" align="center">   
       <label>ราคา : </label>  
         <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่"><br><br>
-        <input type="radio" name="corner" value="red" selected> แดง<t>
+        <input type="radio" name="corner" value="red" checked> แดง<t>
         <input type="radio" name="corner" value="draw"> เสมอ<t>
         <input type="radio" name="corner" value="blue"> น้ำเงิน
 
