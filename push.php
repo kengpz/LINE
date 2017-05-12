@@ -6,7 +6,7 @@ $strAccessToken = "CUwlk0hS8W7XsdJ0FBpqEufyGplNRYr8y9EdwRqHh7HxzJQu+9PV8WvS5QzrC
 if($_POST){
  $msg = $_POST['msg'];
  $corner = $_POST['corner'];
- $msg .= $corner;
+ $msg = $corner.$msg;
 }
 $strUrl = "https://api.line.me/v2/bot/message/push";
  
