@@ -15,12 +15,14 @@
         <input type="radio" name="corner" value="แดงต่อ" checked> แดง
         <input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 
-      <br><br><br><br><br><br>
+        <br><br><br>
+ 	<input type="submit" value="up" onclick="up()">  
+	<input type="submit" value="down" onclick="down()">  
+	<br><br><br>
       <input type="submit" value="Enter" style="width:100px;" autofocus>
     </div>
   </div>
 </form>
- <input type="reset" value="Reset" style="width:100px;">
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
  
@@ -53,6 +55,12 @@ $( "#priceForm" ).submit(function( event ) {
 	  return rads[rad].value;
 	 }
 	return null;
+}
+function up() {
+ var p = document.getElementById("msg").stepUp(1);
+}
+function down() {
+ var p = document.getElementById("msg").stepUp(-1);
 }
 </script>
  
