@@ -7,6 +7,7 @@ if($_POST){
  $msg = $_POST['msg'];
  $corner = $_POST['corner'];
  $msg = $corner.$msg;
+ echo $msg;
 }
 $strUrl = "https://api.line.me/v2/bot/message/push";
  
