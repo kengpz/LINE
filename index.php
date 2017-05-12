@@ -32,7 +32,7 @@
 
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
-		$("#Send").click(function() {
+		$( "#priceForm" ).submit(function( event ) {
 			var co = getRadioVal("corner");
 			// Stop form from submitting normally
 			event.preventDefault();
@@ -49,7 +49,6 @@
 			posting.done(function( data ) {
 				var content = $( data ).find( "#content" );
 			$( "#result" ).empty().append( content );
-			$("#priceForm").submit();
 		});
 
 		
