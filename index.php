@@ -22,10 +22,7 @@
 				<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
 			</div>
 		</div>
-	</form>
 
-	<form id="ctrlForm">
-		
 	</form>
 	<!-- the result of the search will be rendered inside this div -->
 	<div id="result"></div>
