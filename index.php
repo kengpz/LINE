@@ -12,23 +12,22 @@
      <div class = "form_group" align="center">   
       <label>ราคา : </label>  
         <input type="tel" name="msg" id="msg" placeholder="พิมพ์ราคาที่นี่"><br><br>
-        <input type="radio" name="corner" value="red" checked> แดง<t>
-        <input type="radio" name="corner" value="draw"> เสมอ<t>
-        <input type="radio" name="corner" value="blue"> น้ำเงิน
+        <input type="radio" name="corner" value="แดงต่อ" checked> แดง
+        <input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 
       <br><br><br><br><br><br>
       <input type="submit" value="Enter" style="width:100px;" autofocus>
-       <input type="reset" value="Reset" style="width:100px;">
     </div>
   </div>
 </form>
+ <input type="reset" value="Reset" style="width:100px;">
 <!-- the result of the search will be rendered inside this div -->
 <div id="result"></div>
  
 <script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
 $( "#priceForm" ).submit(function( event ) {
- 
+  var co = getRadioVal("corner");
   // Stop form from submitting normally
   event.preventDefault();
  
@@ -36,9 +35,9 @@ $( "#priceForm" ).submit(function( event ) {
   var $form = $( this ),
     price = $form.find( "input[name='msg']" ).val(),
     url = "push.php";
-  
+
   // Send the data using post
-  var posting = $.post( url, { msg: price} );
+  var posting = $.post( url, { msg: price, corner: co} );
  
   // Put the results in a div
   posting.done(function( data ) {
@@ -46,6 +45,15 @@ $( "#priceForm" ).submit(function( event ) {
     $( "#result" ).empty().append( content );
   });
 });
+  
+ function getRadioVal(radioName) {
+	var rads = document.getElementsByName(radioName);
+	for ( var rad in rads) {
+	 if (rads[rad].checked)
+	  return rads[rad].value;
+	 }
+	return null;
+}
 </script>
  
 </body>
