@@ -16,8 +16,8 @@
         <input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 
         <br><br><br>
- 	<input type="submit" value="up" onclick="up()">  
-	<input type="submit" value="down" onclick="down()">  
+	     <button onclick="up()">up</button>
+	     <button onclick="down()">down</button>
 	<br><br><br>
       <input type="submit" value="Enter" style="width:100px;" autofocus>
     </div>
