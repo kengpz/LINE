@@ -22,7 +22,7 @@
 <p>Type 'correct' to validate.</p>
 <form action="push.php" method="POST">
   <div>
-    <input type="text">
+    <input type="text" name="msg">
     <input type="submit"><br>
     <input type="radio" name="corner" id="corner" value="Red" checked> 1
 	  <input type="radio" name="corner" id="corner" value="Blue"> 2
