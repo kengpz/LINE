@@ -45,10 +45,9 @@
 			// Put the results in a div
 			posting.done(function( data ) {
 				var content = $( data ).find( "#content" );
-			$( "#result" ).empty().append( content );
+				$( "#result" ).empty().append( content );
+			});
 		});
-
-		
 
  function getRadioVal(radioName) {
 	var rads = document.getElementsByName(radioName);
