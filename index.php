@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<form action="/" id="priceForm">
+	<form action="push.php" id="priceForm">
 		<div class="container">
 			<div class="form_group" align="center">
 				<br> <br> <br>
