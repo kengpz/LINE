@@ -14,6 +14,9 @@
 				<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
 				<input type="radio" name="corner" value="แดงต่อ" checked> แดง 
 				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน <br> <br> <br>
+				
+				<button onclick="up()">up</button>
+				<button onclick="down()">down</button>
 				<br> <br> <br> 
 
 				<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
@@ -22,8 +25,7 @@
 	</form>
 
 	<form id="ctrlForm">
-		<button onclick="up()">up</button>
-		<button onclick="down()">down</button>
+		
 	</form>
 	<!-- the result of the search will be rendered inside this div -->
 	<div id="result"></div>
