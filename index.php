@@ -21,7 +21,7 @@
 		</div>
 	</form>
 
-	<form action="/" id="ctrlForm">
+	<form id="ctrlForm">
 		<button onclick="up()">up</button>
 		<button onclick="down()">down</button>
 	</form>
