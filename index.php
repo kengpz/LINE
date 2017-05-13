@@ -10,19 +10,23 @@
 <body>
 	<div class="container-fluid">
 	<form action="/" id="priceForm" method="post">
-		<div class="container">
-			<div class="form_group" align="center">
-				<br> <br> <br>
-				<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
-				<input type="radio" name="corner" value="แดงต่อ" checked> แดง 
-				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน <br> <br> <br>
-				
-				<button type="button" onclick="up()">up</button>
-				<button type="button" onclick="down()">down</button>
-				<br> <br> <br> 
-
-				<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
+		<div class="form_group" align="center">
+		<div class="row">
+			<div class="col-xs-offset-4 col-xs-3" style="background-color:red">
+				<input type="radio" name="corner" value="แดงต่อ" checked> แดง
 			</div>
+			<div class="col-xs-offset-3 col-xs-2" style="background-color:blue">
+				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
+			</div>
+		</div>
+			<br> <br> <br>
+			<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
+
+			<button type="button" onclick="up()">up</button>
+			<button type="button" onclick="down()">down</button>
+			<br> <br> <br> 
+
+			<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
 		</div>
 	</form>
 	</div>
