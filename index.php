@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muaythai Demo</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+	<div class="container-fluid">
 	<form action="/" id="priceForm" method="post">
 		<div class="container">
 			<div class="form_group" align="center">
@@ -22,8 +24,8 @@
 				<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
 			</div>
 		</div>
-
 	</form>
+	</div>
 	<!-- the result of the search will be rendered inside this div -->
 	<div id="result"></div> <br>
 
