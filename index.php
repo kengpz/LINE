@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muaythai Demo</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -28,7 +29,7 @@
 			<button type="button" onclick="down()">down</button>
 			<br> <br> <br> 
 
-			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" value="Enter" style="width: 100px;" autofocus></button>
+			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" value="Enter" autofocus></button>
 
 	</form>
 	</div>
