@@ -30,7 +30,7 @@
 	<div align="center" class="frame-data"> 
 	<div class="nano">
 	<div class="nano-content">
-		<iframe data-src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" id="dataframe" width="100%"  height="100%" frameborder="0" class="lazy-loaded" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style=" width: 730px; height:500px; "></iframe>
+		<iframe data-src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" id="dataframe" width="100%"  height="100%" frameborder="0" class="lazy-loaded" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style=" width: 700px; height:500px; "></iframe>
 	</div>
 	</div>
 	</div>
