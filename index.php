@@ -93,9 +93,7 @@
 
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
-		$( document ).ready(function() {
-    		  document.getElementById("msg").innerHTML = 0;
-		});
+		document.getElementById('msg').value = 0;
 		$( "#priceForm" ).submit(function( event ) {
 			var co = getRadioVal("corner");
 			var rate = getRadioVal("rate");
