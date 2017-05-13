@@ -10,9 +10,9 @@ if($_POST){
  $corner = $_POST['corner'];
  $rate = $_POST['rate'];
  if(strcmp($rate, $compare) == 0){
-  $msg = $rate . $msg;
+  $msg = $rate . $corner;
  }else {
-  $msg = $rate . $msg;
+  $msg = $corner . $rate . $msg;
  }
  echo $msg;
 }
