@@ -10,7 +10,6 @@
 <body>
 	<div class="container-fluid">
 	<form action="/" id="priceForm" method="post">
-		<div class="form_group" align="center">
 		<div class="row">
 			<div class="col-xs-offset-4 col-xs-3" style="background-color:red">
 				<input type="radio" name="corner" value="แดงต่อ" checked> แดง
@@ -27,7 +26,7 @@
 			<br> <br> <br> 
 
 			<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
-		</div>
+
 	</form>
 	</div>
 	<!-- the result of the search will be rendered inside this div -->
