@@ -13,17 +13,17 @@
 	<form action="/" id="priceForm" method="post" role="form">
 		<div class="row"></div>
 		<div class="row">
-			<div class="col-xs-6" style="background-color:#E71818">
+			<div class="col-xs-offset-2 col-xs-4" style="background-color:#E71818">
 				<label class="radio-inline"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</label>
 			</div>
-			<div class="col-xs-6" style="background-color:#083AA6">
+			<div class="col-xs-offset-2 col-xs-4" style="background-color:#083AA6">
 				<label class="radio-inline"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</label>
 			</div>
 		</div>
 		
 			<br> <br> <br>
 			<label class="control-label">ราคา : </label>
-			<input type="number" class="col-xs-6" name="msg" id="msg"><br><br>
+			<input type="number" class="form-control col-xs-6" name="msg" id="msg"><br><br>
 
 			<button type="button" class="btn btn-default" onclick="up()">
 				<span class="glyphicon glyphicon-triangle-top"></span> 
