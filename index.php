@@ -8,9 +8,9 @@
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <title>Muaythai Demo</title>
 <style>
-li.exprice {
-    height: 40px;
-    width: 100px;
+#exprice {
+    height: 60px;
+    width: 85px;
 }
 </style>
 </head>
@@ -56,7 +56,7 @@ li.exprice {
 				</button>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
-				<button type="button" class="btn btn-default btn-lg" style="width:100px;" onclick="down()">
+				<button type="button" class="btn btn-default btn-lg" style="width:100px;margin-left:15px;" onclick="down()">
 					<span class="glyphicon glyphicon-triangle-bottom"></span> 
 				</button>
 			</div>
@@ -69,20 +69,20 @@ li.exprice {
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">10/9</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">5/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">11/8</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">3/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">10/9</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">5/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">11/8</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">3/2</span></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">5/3</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">7/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">5/2</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">7/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">5/3</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">7/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">5/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:9px;">7/2</span></a></li>
 				</ul>
 			</div>
 		</div>
