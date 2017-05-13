@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container-fluid">
-	<form action="/" id="priceForm" method="post">
+	<form action="/" id="priceForm" method="post" role="form">
 		<div class="row">
 			<div class="col-xs-offset-4 col-xs-3" style="background-color:red">
 				<input type="radio" name="corner" value="แดงต่อ" checked> แดง
@@ -19,13 +19,10 @@
 				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 			</div>
 		</div>
-		<div class="row">
-			<button type="button" class="btn btn-success btn-lg">
-				<span class="glyphicon glyphicon-ok-sign"></span>Login
-			</button>
-		</div>
+
 			<br> <br> <br>
-			<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
+			<label class="control-label">ราคา : </label>
+			<input type="number" class="form-control" name="msg" id="msg"><br><br>
 
 			<button type="button" class="btn btn-default" onclick="up()">
 				<span class="glyphicon glyphicon-triangle-top"></span> 
