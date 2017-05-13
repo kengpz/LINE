@@ -18,6 +18,9 @@
 				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน
 			</div>
 		</div>
+		<div class="row">
+		
+		</div>
 			<br> <br> <br>
 			<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
 
@@ -25,7 +28,7 @@
 			<button type="button" onclick="down()">down</button>
 			<br> <br> <br> 
 
-			<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
+			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" value="Enter" style="width: 100px;" autofocus></button>
 
 	</form>
 	</div>
