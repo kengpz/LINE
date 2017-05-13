@@ -8,7 +8,7 @@
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <title>Muaythai Demo</title>
 <style>
- li {
+ul.nav {
     height: 40px;
     width: 100px;
 }
