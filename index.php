@@ -39,7 +39,7 @@
 				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;">
 			</div>
 		</div>
-			<br> <br> 
+		<br> <br> 
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
 				<button type="button" class="btn btn-default btn-lg" onclick="up()">
@@ -60,7 +60,25 @@
 				</button>
 			</div>
 		</div>	
-			
+		<br><br><br>
+		<div class="row">
+			<div>
+				<ul class="nav nav-pills" role="tablist">
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">10/9</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">5/4</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">11/8</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">3/2</span></a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="nav nav-pills" role="tablist">
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">5/3</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">7/4</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">5/2</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge" style=" width:100px;">7/2</span></a></li>
+				</ul>
+			</div>
+		</div>
 	</form>
 	</div>
 	<!-- the result of the search will be rendered inside this div -->
