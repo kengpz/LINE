@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muaythai Demo</title>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <title>Muaythai Demo</title>
 </head>
 <body>
 	<div class="container-fluid">
@@ -20,7 +20,9 @@
 			</div>
 		</div>
 		<div class="row">
-		
+			<button type="button" class="btn btn-success btn-lg">
+				<span class="glyphicon glyphicon-ok-sign"></span>Login
+			</button>
 		</div>
 			<br> <br> <br>
 			<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
@@ -28,7 +30,7 @@
 			<button type="button" onclick="up()">up</button>
 			<button type="button" onclick="down()">down</button>
 			<br> <br> <br> 
-
+			
 			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" value="Enter" autofocus></button>
 
 	</form>
