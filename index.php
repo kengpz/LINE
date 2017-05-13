@@ -32,7 +32,7 @@
 				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;">
 			</div>
 		</div>
-			<br> <br> <br>
+			<br> <br> 
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
 				<button type="button" class="btn btn-default btn-lg" onclick="up()">
@@ -45,8 +45,9 @@
 				</button>
 			</div>
 		</div>
+		<br>
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-2">
+			<div class="col-xs-offset-1 col-xs-6" align="center">
 				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
 					<span class="glyphicon glyphicon-ok-sign"></span> Send
 				</button>
