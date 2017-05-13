@@ -17,7 +17,7 @@
 			<div class="col-xs-offset-1 col-xs-2">
 				<h3><span class="label label-primary label-lg"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</span></h3>
 			</div>
-			<div class="col-xs-2">
+			<div class="col-xs-offset-1 col-xs-2">
 				<h3><span class="label label-danger label-lg"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</span></h3>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 			<div class="col-xs-offset-1 col-xs-2">
 				<h3><span class="label label-default">ราคา </span></h3>
 			</div>
-			<div class="col-xs-2">
+			<div class="col-xs-offset-1 col-xs-6">
 				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;">
 			</div>
 		</div>
