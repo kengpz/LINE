@@ -26,7 +26,7 @@
 				<h3><span class="label label-default label-lg ">ราคา </span></h3>
 			</div>
 			<div class="col-xs-offset-1 col-xs-4">
-				<input type="number" class="form-control col-xs-6" name="msg" id="msg">
+				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 10px;">
 			</div>
 		</div>
 			<br> <br> <br>
