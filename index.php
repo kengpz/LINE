@@ -31,7 +31,9 @@
 			<button type="button" onclick="down()">down</button>
 			<br> <br> <br> 
 			
-			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" value="Enter" autofocus></button>
+			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
+				<span class="glyphicon glyphicon-ok-sign"></span> Send
+			</button>
 
 	</form>
 	</div>
