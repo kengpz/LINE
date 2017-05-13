@@ -15,8 +15,8 @@
 				<input type="radio" name="corner" value="แดงต่อ" checked> แดง 
 				<input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน <br> <br> <br>
 				
-				<button onclick="up()">up</button>
-				<button onclick="down()">down</button>
+				<button type="button" onclick="up()">up</button>
+				<button type="button" onclick="down()">down</button>
 				<br> <br> <br> 
 
 				<input type="submit" name="Send" id="Send" value="Enter" style="width: 100px;" autofocus>
@@ -25,8 +25,8 @@
 
 	</form>
 	<!-- the result of the search will be rendered inside this div -->
-	<div id="result"></div>
-	<div>
+	<div id="result"></div> <br>
+	<div align="center">
 		<iframe data-src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" id="dataframe" width="100%" height="100%" frameborder="0" class="lazy-loaded" 
 		src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style=" width: 730px; height:500px;">
 		</iframe>
