@@ -26,10 +26,10 @@
 			<label class="control-label">ราคา : </label>
 			<input type="number" class="form-control col-xs-6" name="msg" id="msg"><br><br>
 
-			<button type="button" class="btn btn-default" onclick="up()">
+			<button type="button" class="btn btn-default btn-lg" onclick="up()">
 				<span class="glyphicon glyphicon-triangle-top"></span> 
 			</button>
-			<button type="button" class="btn btn-default" onclick="down()">
+			<button type="button" class="btn btn-default btn-lg" onclick="down()">
 				<span class="glyphicon glyphicon-triangle-bottom"></span> 
 			</button>
 			<br> <br> <br> 
