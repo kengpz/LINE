@@ -37,14 +37,16 @@ li.exprice {
 				<h3><span class="label label-primary label-lg"><input type="radio" name="corner" value="น้ำเงิน"> น้ำเงิน</span></h3>
 			</div>			
 		</div>
+		<br>
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-6">
+			<div class="col-xs-offset-1 col-xs-4">
 				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;" align="center">
 			</div>
-			<div class="col-xs-offset-1 col-xs-2">
-				<h3><span class="label label-default">ราคา </span></h3>
+			<div class="col-xs-offset-1 col-xs-2" align="center">
+				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" style="width:150px;" autofocus>
+					<span class="glyphicon glyphicon-ok-sign"></span> Send
+				</button>
 			</div>
-			
 		</div>
 		<br> <br> <br> 
 		<div class="row">
@@ -61,11 +63,7 @@ li.exprice {
 		</div>
 		<br><br>
 		<div class="row">
-			<div class="col-xs-offset-3 col-xs-6" align="center">
-				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" style="width:150px;" autofocus>
-					<span class="glyphicon glyphicon-ok-sign"></span> Send
-				</button>
-			</div>
+			
 		</div>	
 		<br><br><br>
 		<div class="row">
