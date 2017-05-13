@@ -11,7 +11,17 @@
 <body>
 	<div class="container-fluid">
 	<form action="/" id="priceForm" method="post" role="form">
-		<div class="row"></div>
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-2">
+				<h3><span class="label label-default"><input type="radio" name="rate" value="ต่อ" checked> ต่อ</span></h3>
+			</div>
+			<div class="col-xs-offset-1 col-xs-2">
+				<h3><span class="label label-default"><input type="radio" name="rate" value="รอง"> รอง</span></h3>
+			</div>
+			<div class="col-xs-offset-1 col-xs-2">
+				<h3><span class="label label-default"><input type="radio" name="rate" value="เสมอ"> เสมอ</span></h3>
+			</div>
+		</div>
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
@@ -63,6 +73,7 @@
 // Attach a submit handler to the form
 		$( "#priceForm" ).submit(function( event ) {
 			var co = getRadioVal("corner");
+			var rate = getRadioVal("rate");
 			// Stop form from submitting normally
 			event.preventDefault();
  
@@ -72,7 +83,11 @@
 				url = "push.php";
 					
 			// Send the data using post
-			var posting = $.post( url, { msg: price, corner: co} );
+			var posting = $.post( url, { 
+				msg: price, 
+				corner: co,
+				rate: rate
+			} );
 			
 			// Put the results in a div
 			posting.done(function( data ) {
