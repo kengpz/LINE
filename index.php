@@ -16,14 +16,14 @@
 			<div class="col-xs-6" style="background-color:#E71818">
 				<label class="radio-inline"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</label>
 			</div>
-			<div class="col-xs-6" style="background-color:#1360AE">
+			<div class="col-xs-6" style="background-color:#083AA6">
 				<label class="radio-inline"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</label>
 			</div>
 		</div>
 		
 			<br> <br> <br>
 			<label class="control-label">ราคา : </label>
-			<input type="number" class="form-control col-xs-6" name="msg" id="msg"><br><br>
+			<input type="number" class="col-xs-6" name="msg" id="msg"><br><br>
 
 			<button type="button" class="btn btn-default" onclick="up()">
 				<span class="glyphicon glyphicon-triangle-top"></span> 
@@ -42,7 +42,7 @@
 	<!-- the result of the search will be rendered inside this div -->
 	<div id="result"></div> <br>
 
-	<div align="left" class="frame-data col-xs-12"> 
+	<div align="left" class="col-xs-12"> 
 	<div class="nano">
 	<div class="nano-content">
 		<iframe data-src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" id="dataframe" width="100%"  height="100%" frameborder="0" class="lazy-loaded" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style=" width: 700px; height:500px; "></iframe>
