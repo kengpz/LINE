@@ -15,18 +15,18 @@
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-4">
-				<span class="label label-primary"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</span>
+				<span class="label label-primary label-lg"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</span>
 			</div>
 			<div class="col-xs-offset-2 col-xs-4">
-				<span class="label label-warning"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</span>
+				<span class="label label-danger label-lg"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</span>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
-				<span class="label label-default">ราคา </span>
+				<span class="label label-default label-lg ">ราคา </span>
 			</div>
 			<div class="col-xs-4">
-				<input type="number" class="form-control col-xs-6" name="msg" id="msg">
+				<input type="number" class="form-control col-xs-6 form-control-lg" name="msg" id="msg">
 			</div>
 		</div>
 			<br> <br> <br>
