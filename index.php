@@ -7,6 +7,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <title>Muaythai Demo</title>
+<style>
+ li {
+    height: 40px;
+    width: 100px;
+}
+</style>
 </head>
 <body>
 	<div class="container-fluid">
@@ -52,9 +58,9 @@
 				</button>
 			</div>
 		</div>
-		<br>
+		<br><br>
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-6" align="center">
+			<div class="col-xs-offset-3 col-xs-6" align="center">
 				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
 					<span class="glyphicon glyphicon-ok-sign"></span> Send
 				</button>
@@ -64,14 +70,14 @@
 		<div class="row">
 			<div>
 				<ul class="nav nav-pills" role="tablist">
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">10/9</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">5/4</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">11/8</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">3/2</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">5/3</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">7/4</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">5/2</span></a></li>
-				  <li role="presentation"><a href="#"><span class="badge" style="width:100px;">7/2</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">10/9</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">5/4</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">11/8</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">3/2</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">5/3</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">7/4</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">5/2</span></a></li>
+				  <li role="presentation"><a href="#"><span class="badge">7/2</span></a></li>
 				</ul>
 			</div>
 		</div>
