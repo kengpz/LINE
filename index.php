@@ -40,7 +40,7 @@ li.exprice {
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-4">
-				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;" align="center">
+				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 10px;" align="center">
 			</div>
 			<div class="col-xs-offset-1 col-xs-2" align="center">
 				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" style="width:150px;" autofocus>
@@ -69,20 +69,20 @@ li.exprice {
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-9">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">10/9</span></a></li>
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">5/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">11/8</span></a></li>
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">3/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">10/9</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">5/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">11/8</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">3/2</span></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-9">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">5/3</span></a></li>
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">7/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">5/2</span></a></li>
-				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">7/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">5/3</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">7/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">5/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">7/2</span></a></li>
 				</ul>
 			</div>
 		</div>
