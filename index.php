@@ -15,10 +15,10 @@
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
-				<h3><span class="label label-primary label-lg"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</span></h3>
+				<h3><span class="label label-danger label-lg"><input type="radio" name="corner" value="แดงต่อ" checked> แดง</span></h3>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
-				<h3><span class="label label-danger label-lg"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</span></h3>
+				<h3><span class="label label-primary label-lg"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</span></h3>
 			</div>
 		</div>
 		<div class="row">
@@ -30,19 +30,27 @@
 			</div>
 		</div>
 			<br> <br> <br>
-
-			<button type="button" class="btn btn-default btn-lg" onclick="up()">
-				<span class="glyphicon glyphicon-triangle-top"></span> 
-			</button>
-			<button type="button" class="btn btn-default btn-lg" onclick="down()">
-				<span class="glyphicon glyphicon-triangle-bottom"></span> 
-			</button>
-			<br> <br> <br> 
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-2">
+				<button type="button" class="btn btn-default btn-lg" onclick="up()">
+					<span class="glyphicon glyphicon-triangle-top"></span> 
+				</button>
+			</div>
+			<div class="col-xs-offset-1 col-xs-2">
+				<button type="button" class="btn btn-default btn-lg" onclick="down()">
+					<span class="glyphicon glyphicon-triangle-bottom"></span> 
+				</button>
+			</div>
+		</div>
+		 <br> 
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-2">
+				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
+					<span class="glyphicon glyphicon-ok-sign"></span> Send
+				</button>
+			</div>
+		</div>	
 			
-			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
-				<span class="glyphicon glyphicon-ok-sign"></span> Send
-			</button>
-
 	</form>
 	</div>
 	<!-- the result of the search will be rendered inside this div -->
