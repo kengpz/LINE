@@ -27,8 +27,12 @@
 			<br> <br> <br>
 			<label>ราคา : </label> <input type="number" name="msg" id="msg"><br><br>
 
-			<button type="button" onclick="up()">up</button>
-			<button type="button" onclick="down()">down</button>
+			<button type="button" class="btn btn-default" onclick="up()">
+				<span class="glyphicon glyphicon-triangle-top"></span> 
+			</button>
+			<button type="button" class="btn btn-default" onclick="down()">
+				<span class="glyphicon glyphicon-triangle-bottom"></span> 
+			</button>
 			<br> <br> <br> 
 			
 			<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
