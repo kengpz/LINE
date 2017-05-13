@@ -38,12 +38,13 @@ li.exprice {
 			</div>			
 		</div>
 		<div class="row">
+			<div class="col-xs-offset-1 col-xs-6">
+				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;" align="center">
+			</div>
 			<div class="col-xs-offset-1 col-xs-2">
 				<h3><span class="label label-default">ราคา </span></h3>
 			</div>
-			<div class="col-xs-offset-1 col-xs-6">
-				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 20px;">
-			</div>
+			
 		</div>
 		<br> <br> <br> 
 		<div class="row">
@@ -61,19 +62,25 @@ li.exprice {
 		<br><br>
 		<div class="row">
 			<div class="col-xs-offset-3 col-xs-6" align="center">
-				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg"autofocus>
+				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" style="width:150px;" autofocus>
 					<span class="glyphicon glyphicon-ok-sign"></span> Send
 				</button>
 			</div>
 		</div>	
 		<br><br><br>
 		<div class="row">
-			<div>
+			<div class="col-xs-offset-1 col-xs-9">
 				<ul class="nav nav-pills" role="tablist">
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">10/9</span></a></li>
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">5/4</span></a></li>
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">11/8</span></a></li>
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">3/2</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-9">
+				<ul class="nav nav-pills" role="tablist">
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">5/3</span></a></li>
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">7/4</span></a></li>
 				  <li id="exprice" rol="presentation" align="center"><a href="#"><span class="badge">5/2</span></a></li>
