@@ -69,20 +69,20 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">10/9</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">5/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">11/8</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">3/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p109"><span class="badge" style="margin-top:10px;">10/9</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p54"><span class="badge" style="margin-top:10px;">5/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p118"><span class="badge" style="margin-top:10px;">11/8</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p32"><span class="badge" style="margin-top:10px;">3/2</span></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">5/3</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">7/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">5/2</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge" style="margin-top:10px;">7/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p53"><span class="badge" style="margin-top:10px;">5/3</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p74"><span class="badge" style="margin-top:10px;">7/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p52"><span class="badge" style="margin-top:10px;">5/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#" id="p72"><span class="badge" style="margin-top:10px;">7/2</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -133,6 +133,29 @@ function up() {
 function down() {
  document.forms['priceForm']['msg'].stepUp(-1);
 }
+$("#p109").click(function() {
+  document.getElementById('msg').value = 109;
+});
+$("#p54").click(function() {
+  document.getElementById('msg').value = 54;
+});
+$("#p118").click(function() {
+  document.getElementById('msg').value = 118;
+});
+$("#p32").click(function() {
+  document.getElementById('msg').value = 32;
+});
+$("#p53").click(function() {
+  document.getElementById('msg').value = 53;
+});$("#p74").click(function() {
+  document.getElementById('msg').value = 74;
+});
+$("#p52").click(function() {
+  document.getElementById('msg').value = 52;
+});
+$("#p72").click(function() {
+  document.getElementById('msg').value = 7/2;
+});
 </script>
 
 </body>
