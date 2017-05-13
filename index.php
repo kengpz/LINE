@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <title>Muaythai Demo</title>
 </head>
 <body>
