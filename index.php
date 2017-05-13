@@ -26,6 +26,11 @@
 	</form>
 	<!-- the result of the search will be rendered inside this div -->
 	<div id="result"></div>
+	<div>
+		<iframe data-src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" id="dataframe" width="100%" height="100%" frameborder="0" class="lazy-loaded" 
+		src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style=" width: 730px; height:500px;">
+		</iframe>
+	</div>
 
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
