@@ -20,7 +20,7 @@
 			<div class="col-xs-offset-1 col-xs-2">
 				<h3><span class="label label-primary label-lg"><input type="radio" name="corner" value="น้ำเงินต่อ"> น้ำเงิน</span></h3>
 			</div>
-			<div class="col-xs-offset-3 col-xs-2">
+			<div class="col-xs-offset-2 col-xs-2">
 				<h3><span class="label label-info label-lg"><input type="checkbox" name="draw" value="เสมอ"> เสมอ</span></h3>
 			</div>
 		</div>
