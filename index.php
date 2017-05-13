@@ -67,22 +67,22 @@ li.exprice {
 		</div>	
 		<br><br><br>
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-11">
+			<div class="col-xs-12">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">10/9</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">5/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">11/8</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">3/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">10/9</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">5/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">11/8</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">3/2</span></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-offset-1 col-xs-11">
+			<div class="col-xs-12">
 				<ul class="nav nav-pills" role="tablist">
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">5/3</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">7/4</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">5/2</span></a></li>
-				  <li id="exprice" rol="presentation" align="center" style="width:100px;"><a href="#"><span class="badge">7/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">5/3</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">7/4</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">5/2</span></a></li>
+				  <li id="exprice" rol="presentation" align="center" style="width:85px;"><a href="#"><span class="badge">7/2</span></a></li>
 				</ul>
 			</div>
 		</div>
