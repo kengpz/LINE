@@ -165,11 +165,10 @@ $("#rateL").click(function() {
    $("input[name='rate'][value='เสมอ']").attr("checked", true);
 });
 $("#cornerR").click(function() {
-   $("input[name='corner'][value='แดง']").attr("checked", true);
+  $('input[name='corner'][value="แดง"]').prop('checked', true).trigger('change');
 });
 $("#cornerB").click(function() {
-  $("input[name='corner'][value='น้ำเงิน']").attr("checked", true);
-});
+  $('input[name='corner'][value="น้ำเงิน"]').prop('checked', true).trigger('change');
 </script>
 
 </body>
