@@ -19,22 +19,22 @@
 	<form action="/" id="priceForm" method="post" role="form">
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id=""><h3><span class="label label-default"><input type="radio" name="rate" value="ต่อ" checked> ต่อ</span></h3></a>
+				<a href="#" id="rateT"><h3><span class="label label-default"><input type="radio" name="rate" value="ต่อ" checked> ต่อ</span></h3></a>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id=""><h3><span class="label label-default"><input type="radio" name="rate" value="รอง"> รอง</span></h3></a>
+				<a href="#" id="rateL"><h3><span class="label label-default"><input type="radio" name="rate" value="รอง"> รอง</span></h3></a>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id=""><h3><span class="label label-default"><input type="radio" name="rate" value="เสมอ"> เสมอ</span></h3></a>
+				<a href="#" id="rateD"><h3><span class="label label-default"><input type="radio" name="rate" value="เสมอ"> เสมอ</span></h3></a>
 			</div>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id=""><h3><span class="label label-danger"><input type="radio" name="corner" value="แดง" checked> แดง</span></h3></a>
+				<a href="#" id="cornerR"><h3><span class="label label-danger"><input type="radio" name="corner" value="แดง" checked> แดง</span></h3></a>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id=""><h3><span class="label label-primary"><input type="radio" name="corner" value="น้ำเงิน"> น้ำเงิน</span></h3></a>
+				<a href="#" id="cornerB"><h3><span class="label label-primary"><input type="radio" name="corner" value="น้ำเงิน"> น้ำเงิน</span></h3></a>
 			</div>			
 		</div>
 		<br>
@@ -155,6 +155,20 @@ $("#p52").click(function() {
 });
 $("#p72").click(function() {
   document.getElementById('msg').value = 7/2;
+});
+$("#rateT").click(function() {
+  document.getElementById('msg').checked = true;
+});
+$("#rateL").click(function() {
+  document.getElementById('msg').checked = true ;
+});$("#rateD").click(function() {
+  document.getElementById('msg').checked = true ;
+});
+$("#cornerR").click(function() {
+  document.getElementById('cornerR').checked = true ;
+});
+$("#cornerB").click(function() {
+  document.getElementById('cornerB').checked  = true ;
 });
 </script>
 
