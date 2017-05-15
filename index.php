@@ -159,7 +159,7 @@ $("#p72").click(function() {
 $( "#cornerR" ).on( "click", function() {
 	document.getElementById("corner1").checked = true;
 });
-$( "#cornerR" ).on( "click", function() {
+$( "#cornerB" ).on( "click", function() {
 	document.getElementById("corner2").checked = true;
 });
 $( "#rateT" ).on( "click", function() {
