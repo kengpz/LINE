@@ -156,12 +156,21 @@ $("#p52").click(function() {
 $("#p72").click(function() {
   document.getElementById('msg').value = 7/2;
 });
-function check() {
-    document.getElementById(this).checked = true;
-}
-function uncheck() {
-    document.getElementById(this).checked = true;
-}
+$( "#cornerR" ).on( "click", function() {
+	document.getElementById("corner1").checked = true;
+});
+$( "#cornerR" ).on( "click", function() {
+	document.getElementById("corner2").checked = true;
+});
+$( "#rateT" ).on( "click", function() {
+	document.getElementById("rate1").checked = true;
+});
+$( "#rateL" ).on( "click", function() {
+	document.getElementById("rate2").checked = true;
+});
+$( "#rateD" ).on( "click", function() {
+	document.getElementById("rate3").checked = true;
+});
 </script>
 
 </body>
