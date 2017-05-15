@@ -157,18 +157,18 @@ $("#p72").click(function() {
   document.getElementById('msg').value = 7/2;
 });
 $("#rateT").click(function() {
-  document.getElementById('msg').checked = true;
+  $("input[name='rate'][value='ต่อ']").attr("checked", true);
 });
 $("#rateL").click(function() {
-  document.getElementById('msg').checked = true ;
+   $("input[name='rate'][value='รอง']").attr("checked", true);
 });$("#rateD").click(function() {
-  document.getElementById('msg').checked = true ;
+   $("input[name='rate'][value='เสมอ']").attr("checked", true);
 });
 $("#cornerR").click(function() {
-  document.getElementById('cornerR').checked = true ;
+   $("input[name='corner'][value='แดง']").attr("checked", true);
 });
 $("#cornerB").click(function() {
-  document.getElementById('cornerB').checked  = true ;
+  $("input[name='corner'][value='น้ำเงิน']").attr("checked", true);
 });
 </script>
 
