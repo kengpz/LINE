@@ -166,9 +166,11 @@ $("#rateL").click(function() {
 });
 $("#cornerR").click(function() {
   $('input[name='corner'][value="แดง"]').attr('checked', true);
+  $('input[name='corner'][value="น้ำเงิน"]').attr('checked', false);
 });
 $("#cornerB").click(function() {
   $('input[name='corner'][value="น้ำเงิน"]').attr('checked', true);
+  $('input[name='corner'][value="แดง"]').attr('checked', false);
 </script>
 
 </body>
