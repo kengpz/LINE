@@ -19,7 +19,7 @@
 	<form action="/" id="priceForm" method="post" role="form">
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id="rateT"><h3><span class="label label-default"><input type="radio" name="rate" value="ต่อ" checked> ต่อ</span></h3></a>
+				<a href="#" id="rateT"><h3><span class="label label-default"><input type="radio" name="rate" value="ต่อ"> ต่อ</span></h3></a>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
 				<a href="#" id="rateL"><h3><span class="label label-default"><input type="radio" name="rate" value="รอง"> รอง</span></h3></a>
@@ -31,7 +31,7 @@
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-2">
-				<a href="#" id="cornerR"><h3><span class="label label-danger"><input type="radio" name="corner" value="แดง" checked> แดง</span></h3></a>
+				<a href="#" id="cornerR"><h3><span class="label label-danger"><input type="radio" name="corner" value="แดง"> แดง</span></h3></a>
 			</div>
 			<div class="col-xs-offset-1 col-xs-2">
 				<a href="#" id="cornerB"><h3><span class="label label-primary"><input type="radio" name="corner" value="น้ำเงิน"> น้ำเงิน</span></h3></a>
