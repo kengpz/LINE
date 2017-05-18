@@ -5,6 +5,7 @@
 <title>Test iframe refresh</title>
 <script>
    var src = $('#dataframe').attr('src');
+   var dsrc = $('#dataframe').attr('data-src');
    setInterval(function () {
         $('#dataframe').remove();
         var iframe_html = '<iframe src="'+ src +'" frameborder="0" style="width:7300px;height:500px;"></iframe>';
@@ -16,7 +17,9 @@
 <body>
 <h3>Test iframe</h3>
     <span id="iframe">
-    <iframe id="dataframe" frameborder="0" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style="width:700px;height:500px;"></iframe>
+    <iframe data-src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" id="dataframe" frameborder="0" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style="width:700px;height:500px;"></iframe>
     </span>
+   <span id="showsrc"></span>
+   <span id="showdsrc"></span>
 </body>
 </html>
