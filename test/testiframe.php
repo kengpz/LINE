@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div><input type="button" value="Refresh" style="width:150px;" /></div><br>
+    <div align="center"><label>ทดสอบ</label>&nbsp;<input type="button" value="Refresh" style="width:150px;" /></div><br>
     <div align="center">
  <iframe id="iframeid" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" frameborder="0" style="width:700px;height:500px;"></iframe>
 </div>
