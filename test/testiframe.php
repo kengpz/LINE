@@ -1,16 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="refresh" content="2000">
+<meta http-equiv="refresh" content="10">
 <title>Test iframe refresh</title>
 <script>
-   var src = $('#dataframe').attr('src');
-   var dsrc = $('#dataframe').attr('data-src');
-   setInterval(function () {
-        $('#dataframe').remove();
-        var iframe_html = '<iframe src="'+ src +'" frameborder="0" style="width:7300px;height:500px;"></iframe>';
-        $('#iframe').html(iframe_html);
-    }, 10000);
+window.setInterval("reloadIFrame();", 10000);
+
+function reloadIFrame() {
+ document.frames["dataframe"].location.reload();
+}
 </script>
 </head>
 
