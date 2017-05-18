@@ -14,6 +14,6 @@ var renew = setInterval(function(){
 
 <body>
 <h3>Test iframe</h3>
-<iframe id="dataframe" width="100%" height="100%" frameborder="0" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style="width:7300px;height:500px;"></iframe>
+<iframe id="dataframe" width="100%" height="100%" frameborder="0" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style="width:700px;height:500px;"></iframe>
 </body>
 </html>
