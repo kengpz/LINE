@@ -7,7 +7,7 @@
 <script type="text/javascript">
     setInterval(refreshIframe1, 10000);
     function refreshIframe1() {
-        $("#Frame1")[0].src = $("#Frame1")[0].src;
+        $('#Frame1')[0].contentWindow.location.reload(true);
     }
 </script>
 </head>
