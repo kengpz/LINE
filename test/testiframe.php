@@ -2,18 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Fouad Ali</title>
+<title>Test iframe refresh</title>
 <script>
-var links = "https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php";
-var i = 0;
-var renew = setInterval(function(){
-    document.getElementById("dataframe").src = links;        
-},5000);
+   var src = $('#dataframe').attr('src');
+   setInterval(function () {
+        $('#dataframe').remove();
+        var iframe_html = '<iframe src="'+ src +'" frameborder="0" style="width:7300px;height:500px;"></iframe>';
+        $('#iframe').html(iframe_html);
+    }, 10000);
 </script>
 </head>
 
 <body>
 <h3>Test iframe</h3>
-<iframe id="dataframe" width="100%" height="100%" frameborder="0" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style="width:700px;height:500px;"></iframe>
+    <span id="iframe">
+    <iframe id="dataframe" frameborder="0" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" style="width:700px;height:500px;"></iframe>
+    </span>
 </body>
 </html>
