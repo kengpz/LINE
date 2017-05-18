@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="refresh" content="">
 <title>Test iframe refresh</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript">
     setInterval(refreshIframe1, 10000);
     function refreshIframe1() {
