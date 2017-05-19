@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Welcome to Homepro, Best Online Shopping</title>
+	</head>
+	<body>
+	<!-- <form name="uob" method="POST" action="http://61.91.120.84/UOBTPGW/Payment/Payment/Payment"> -->
+	<form name="uob" method="post" action="welcome.php">
+		<table style="border:1px;">
+		<tr>
+		<td>paymentGatewayID</td>
+		<td><input type="text" id="paymentGatewayID" name="paymentGatewayID" value="900301001079"/></td>
+		</tr>
+		<tr>
+		<td>invoiceNo</td>
+		<td><input type="text" id="invoiceNo" name="invoiceNo" value="00000001234567990330"/></td>
+		</tr>
+		<tr>
+		<td>productDesc</td>
+		<td><input type="text" id="productDesc" name="productDesc" value="Test Product"/></td>
+		</tr>
+		<tr>
+		<td>amount</td>
+		<td><input type="text" id="amount" name="amount" value="000000100000"/></td>
+		</tr>
+		<td>currencyCode</td>
+		<td><input type="text" id="currencyCode" name="currencyCode" value="764"/></td>
+		</tr>
+		<tr>
+		<td>userDefined1</td>
+		<td><input type="text" id="userDefined1" name="userDefined1" value="userDefined1"/></td>
+		</tr>
+		<tr>
+		<td>userDefined2</td>
+		<td><input type="text" id="userDefined2" name="userDefined2" value="userDefined2"/></td>
+		</tr>
+		<tr>
+		<td>userDefined3</td>
+		<td><input type="text" id="userDefined3" name="userDefined3" value="userDefined3"/></td>
+		</tr>
+		<td>userDefined4</td>
+		<td><input type="text" id="userDefined4" name="userDefined4" value="userDefined4"/></td>
+		</tr>
+		<tr>
+		<td>userDefined5</td>
+		<td><input type="text" id="userDefined5" name="userDefined5" value="userDefined5"/></td>
+		</tr>
+		<tr>
+		<td>Secret Key</td>
+		<td><input type="text" id="secretKey" name="secretKey" value="0JUM9EL2FP5TZ6UXQZQ9EATZJX3D1W2R" style="width:300px;" /></td>
+		</tr>
+		<tr>
+		<td>Allow non 3DS</td>
+		<td><input type="text" id="nonSecure" name="nonSecure" value="Y"/></td>
+		</tr>
+		<td>Campaign Code</td>
+		<td><input type="text" id="campaingCode" name="campaingCode" value=""/></td>
+		</tr>
+		<tr>
+		<td><input type="button" id="GenerateData" value="generate Data" onclick="sortdata()" /></td>
+		<td><input type="textarea" id="data" name="data" value="" style="width:800px;" /></td>
+		</tr>
+		<tr>
+		<td><input type="button" id="GenerateHash" value="generate Hash" /></td>
+		<td><input type="text" id="hashValue" name="hashValue" value="" /></td>
+		</tr>
+		<tr>
+		<td><input type="submit" value="submit" /></td>
+		<td><input type="hidden" id="hd" name="hd" value="" /></td>
+		</tr>
+		</table><br><br>
+		</form>
+		
+	</body>
+
+	<script type="text/javascript" charset="utf-8">
+
+	function genHash() {
+    var str = document.getElementById("data").value;
+    var res = (setformat());
+
+	}
+	function sortdata() {
+			var pid1 = document.getElementById("paymentGatewayID").value;
+			var pid2 = document.getElementById("invoiceNo").value;
+			var pid3 = document.getElementById("productDesc").value;
+			var pid4 = document.getElementById("amount").value;
+			var pid5 = document.getElementById("currencyCode").value;
+			var pid6 = document.getElementById("userDefined1").value;
+			var pid7 = document.getElementById("userDefined2").value;
+			var pid8 = document.getElementById("userDefined3").value;
+			var pid9 = document.getElementById("userDefined4").value;
+			var pid10 = document.getElementById("userDefined5").value;
+			
+			var arr = [pid1, pid2, pid3, pid4, pid5, pid6, pid7, pid8, pid9, pid10];
+			arr.sort();
+			document.getElementById("hd").value = arr ;
+			var lolo =  document.getElementById("hd").value;
+			var rt = setformat(lolo);
+	}
+	
+	function setformat(sw) { 
+		var fm = sw;
+		var co = count(fm);
+		var i = 0;
+		while (i < co) {
+			fm = sub(fm);
+			i++;
+		}
+
+		document.getElementById("data").value = fm;
+		return 1;
+	}
+
+	function count(data) {
+    var str = data;
+    var res = (str.split(',').length - 1);
+
+    return res;
+	}
+	function sub(val) {
+		var da = val;
+		var str = da.replace(",", "");
+		
+		return str;
+	}	
+</script>
+</html>
