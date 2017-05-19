@@ -8,6 +8,7 @@ $signData= strtoupper($signData);
 echo ($signData);
 }else {
 	echo "Not post data";
+}
 ?>
 </body>
 </html>
