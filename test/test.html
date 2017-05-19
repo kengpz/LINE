@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Welcome to Homepro, Best Online Shopping</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 	<!-- <form name="uob" method="POST" action="http://61.91.120.84/UOBTPGW/Payment/Payment/Payment"> -->
@@ -123,6 +125,17 @@
 		var str = da.replace(",", "");
 		
 		return str;
-	}	
+	}
+
+		function getHV() {
+    return $.ajax({
+        url: '/welcome.php',
+        data: {
+            data: $('#data').val()
+        },
+        type: 'POST',
+        dataType: 'html'
+    });
+}
 </script>
 </html>
