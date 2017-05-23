@@ -127,7 +127,7 @@
 
     function getHV() {
     $.ajax({
-        url: '/welcome.php',
+        url: '/test/welcome.php',
         data: { data: $('#data').val() },
         type: 'POST',
 	success: function(data) { document.getElementById("hashValue").value = data; }
