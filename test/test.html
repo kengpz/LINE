@@ -76,8 +76,8 @@
 	<script type="text/javascript" charset="utf-8">
 
 	function genHash() {
-    var str = document.getElementById("data").value;
-    var res = (setformat());
+	    var str = document.getElementById("data").value;
+	    var res = (setformat());
 
 	}
 	function sortdata() {
@@ -113,10 +113,10 @@
 	}
 
 	function count(data) {
-    var str = data;
-    var res = (str.split(',').length - 1);
+	    var str = data;
+	    var res = (str.split(',').length - 1);
 
-    return res;
+	    return res;
 	}
 	function sub(val) {
 		var da = val;
@@ -126,20 +126,11 @@
 	}
 
     function getHV() {
-    return $.ajax({
+    $.ajax({
         url: '/welcome.php',
-        data: {
-            data: $('#data').val()
-        },
+        data: { data: $('#data').val() },
         type: 'POST',
-        dataType: 'html',
-	success: function(data) {
-                                   document.getElementById("hashValue").value = data;
-                                },
-        error: function(e) 
-        {
-            alert('Error: ' + e);
-        }
+	success: function(data) { document.getElementById("hashValue").value = data; }
     });
 }
 </script>
