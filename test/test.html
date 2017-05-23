@@ -127,14 +127,21 @@
 		return str;
 	}
 
-		function getHV() {
+    function getHV() {
     return $.ajax({
         url: '/welcome.php',
         data: {
             data: $('#data').val()
         },
         type: 'POST',
-        dataType: 'html'
+        dataType: 'html',
+	success: function(data) {
+                                   document.getElementById("hashValue").value = data;
+                                },
+        error: function(e) 
+        {
+            alert('Error: ' + e);
+        }
     });
 }
 </script>
