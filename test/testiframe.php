@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Test iframe refresh</title>
+<title>Rate muay</title>
 <script type="text/javascript">
     setInterval(reload, 10000);
     function reload() {
@@ -12,9 +12,8 @@
 </head>
 
 <body>
-    <div align="center"><label>ทดสอบ</label>&nbsp;<input type="button" value="Refresh" style="width:150px;" /></div><br>
-    <div align="center">
+
  <iframe id="iframeid" src="https://www.xn--o3cea3afbwl1da3wf0i.com/poll/open18_muay.php" frameborder="0" style="width:700px;height:500px;"></iframe>
-</div>
+
 </body>
 </html>
