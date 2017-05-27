@@ -94,14 +94,11 @@
 
 	<script> 
 $(function(){
-      $("#header").load("\test\header.html");
+      $("#header").load("/test/header.html");
     });
 	</script> 
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
-		$(function(){
-     		 $("#header").load("\test\header.html"); 
-    		})
 		document.getElementById('msg').value = 0;
 		$( "#priceForm" ).submit(function( event ) {
 			var co = getRadioVal("corner");
