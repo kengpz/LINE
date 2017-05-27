@@ -16,6 +16,7 @@
 </head>
 <body>
 	<div id="header"></div>
+	<div id="rrate"></div>
 	<div class="container-fluid">
 	<form action="/" id="priceForm" method="post" role="form">
 		<div class="row">
@@ -120,8 +121,7 @@ $(function(){
 			
 			// Put the results in a div
 			posting.done(function( data ) {
-				var content = $( data ).find( "#content" );
-				$( "#result" ).empty().append( content );
+				
 			});
 		});
 
@@ -179,6 +179,9 @@ $( "#rateD" ).on( "click", function() {
 });
 $( "#rate" ).on( "click", function() {
 	 $("#result").load("/test/testiframe.php");
+});
+$( "#p72" ).on( "click", function() {
+	 $("#rrate").load("/test/testiframe.php");
 });
 </script>
 
