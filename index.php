@@ -177,6 +177,9 @@ $( "#rateL" ).on( "click", function() {
 $( "#rateD" ).on( "click", function() {
 	document.getElementById("rate3").checked = true;
 });
+$( "#rate" ).on( "click", function() {
+	 $("#result").load("/test/testiframe.php");
+});
 </script>
 
 </body>
