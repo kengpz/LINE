@@ -15,6 +15,7 @@
 </style>
 </head>
 <body>
+	<div id="header"></div>
 	<div class="container-fluid">
 	<form action="/" id="priceForm" method="post" role="form">
 		<div class="row">
@@ -91,8 +92,16 @@
 	<!-- the result of the search will be rendered inside this div -->
 	<div id="result"></div> <br>
 
+	<script> 
+$(function(){
+      $("#header").load("\test\header.html");
+    });
+	</script> 
 	<script type="text/javascript" charset="utf-8">
 // Attach a submit handler to the form
+		$(function(){
+     		 $("#header").load("\test\header.html"); 
+    		})
 		document.getElementById('msg').value = 0;
 		$( "#priceForm" ).submit(function( event ) {
 			var co = getRadioVal("corner");
