@@ -17,10 +17,10 @@
 			  	<ul class="nav navbar-nav">
 			  		<li class="active">
 			  			<li class="nav navbar-nar">
-			  				<a href="#">ตารางมวยวันนี้</a>
+			  				<a href="#" class="myClass">ตารางมวยวันนี้</a>
 			  			</li>
 			  			<li class="nav navbar-nar">
-			  				<a href="" id="rate">เรตมวย</a>
+			  				<a href="" id="rate" class="myClass">เรตมวย</a>
 			  			</li>
 			  		</li>
 
@@ -28,4 +28,12 @@
 			  </div>
 			</nav>
 </body>
+<script>
+$( ".myClass").mouseover(function(){
+    $( ".myClass").css("background-color", "gray");
+});
+$(".myClass").mouseout(function(){
+    $(".myClass").css("background-color", "f8f8f8");
+});
+</script>
 </html>
