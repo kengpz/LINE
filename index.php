@@ -116,7 +116,8 @@ $(function(){
 			var posting = $.post( url, { 
 				msg: price, 
 				corner: co,
-				rate: rate
+				rate: rate,
+				nmsg: price
 			} );
 			
 			// Put the results in a div
