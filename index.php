@@ -42,7 +42,7 @@
 		<br>
 		<div class="row">
 			<div class="col-xs-offset-1 col-xs-5">
-				<input type="number" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 6px;width:190px;" align="center">
+				<input type="text" class="form-control col-xs-6" name="msg" id="msg" style="margin-top: 6px;width:190px;" align="center">
 			</div>
 			<div class="col-xs-offset-1 col-xs-2" align="center">
 				<button type="submit" name="Send" id="Send" class="btn btn-success btn-lg" style="width:120px;" autofocus>
@@ -116,8 +116,8 @@ $(function(){
 			var posting = $.post( url, { 
 				msg: price, 
 				corner: co,
-				rate: rate
-				//nmsg: price,
+				rate: rate,
+				req: price
 			} );
 			
 			// Put the results in a div
