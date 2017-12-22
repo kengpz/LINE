@@ -1,5 +1,6 @@
 <?php
 $msg = "default message";
+$nmsg = "default";
 $rate = "";
 $compare = "เสมอ";
 $handicap = "รอง";
@@ -8,6 +9,7 @@ $strAccessToken = "CUwlk0hS8W7XsdJ0FBpqEufyGplNRYr8y9EdwRqHh7HxzJQu+9PV8WvS5QzrC
 
 if($_POST){
  $msg = $_POST['msg'];
+ $nmsg = $_POST['nmsg'];
  $corner = $_POST['corner'];
  $rate = $_POST['rate'];
  if(strcmp($rate, $compare) == 0){
@@ -15,7 +17,7 @@ if($_POST){
  }else if(strcmp($rate, $handicap) == 0){
   $msg = $msg . $rate;
  }else {
-  $msg = $corner . $rate . $msg;
+  $msg = $corner . $rate . $msg .$nmsg;
  }
  echo $msg;
 }
