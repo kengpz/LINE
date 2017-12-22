@@ -42,7 +42,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['source'][0]['type'] = "group";
   $arrPostData['source'][0]['groupId'] = "C38b5b940c47dade38c04eb701a98208b";
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "xxxxx" . $arrPostData['source'][0]['groupId'];
+  $arrPostData['messages'][0]['text'] = "Json" . $arrJson;
 }
  
 $ch = curl_init();
