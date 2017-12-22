@@ -1,4 +1,5 @@
 <?php
+$nulls = '';
 $msg = "default message";
 $nmsg = "default";
 $rate = "";
@@ -8,6 +9,7 @@ $corner = "";
 $strAccessToken = "CUwlk0hS8W7XsdJ0FBpqEufyGplNRYr8y9EdwRqHh7HxzJQu+9PV8WvS5QzrCx2CvD3RXVsLmGKbW/lGt7OtwSDJc+UJqbV76YFasGzy/s6ewHL3CiYMi5aU2VX5VWn+Nxwe5oLTq0kC3EFYY3kZNgdB04t89/1O/w1cDnyilFU=";
 
 if($_POST){
+ $json = $_POST['req'];
  $msg = $_POST['msg'];
  $nmsg = $_POST['nmsg'];
  $corner = $_POST['corner'];
@@ -31,7 +33,10 @@ $arrPostData = array();
 $arrPostData['to'] = "C38b5b940c47dade38c04eb701a98208b";
 $arrPostData['messages'][0]['type'] = "text";
 $arrPostData['messages'][0]['text'] = $msg ;
- 
+
+if(empty($json) == false) {
+ $msg = $json;
+}
  
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
