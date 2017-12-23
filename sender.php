@@ -6,11 +6,11 @@ $to = '';
 if($_POST) {
  $msg = $_POST['msg'];
  $to = $_POST['to'];
- $cat= $_POST['sat'];
+ $cat= $_POST['cat'];
 } else {
  $msg = $_GET['msg'];
  $to = $_GET['to'];
- $cat= $_GET['sat'];
+ $cat= $_GET['cat'];
 }
 
 $strUrl = "https://api.line.me/v2/bot/message/push";
@@ -36,5 +36,5 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
 curl_close ($ch);
 
-echo $msg . " 200 " .$to;
+echo "200 : " .$msg;
 ?>
