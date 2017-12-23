@@ -1,17 +1,23 @@
 <?php
 $msg = 'xx';
-$sat = 'TRmL8E/pYjsx3FjlXSNsBfiSS9opDNiDZlkWdhMhzVivXYfx3lJq19vtvWDe6MF+pP21hy4AR7tqR71Atluh3MGViDX/B7X6H4aZtcubapd1ESnu8f8g38jy3x75INjre4cGjaXf6bxncLTqfru4hAdB04t89/1O/w1cDnyilFU=';
-$to = 'U1095b0eb190532df137e4d45b70cd383';
+$sat = '';
+$to = '';
 
-$msg = $_GET['msg'];
-$to = $_GET['to'];
-$sat= $_GET['sat'];
+if($_POST) {
+ $msg = $_POST['msg'];
+ $to = $_POST['to'];
+ $cat= $_POST['sat'];
+} else {
+ $msg = $_GET['msg'];
+ $to = $_GET['to'];
+ $cat= $_GET['sat'];
+}
 
 $strUrl = "https://api.line.me/v2/bot/message/push";
  
 $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
-$arrHeader[] = "Authorization: Bearer {$sat}";
+$arrHeader[] = "Authorization: Bearer {$cat}";
 
 $arrPostData = array();
 $arrPostData['to'] = $to;
@@ -30,5 +36,5 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
 curl_close ($ch);
 
-echo $msg . " : " .$to;
+echo $msg . " 200 " .$to;
 ?>
