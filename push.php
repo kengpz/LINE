@@ -23,6 +23,11 @@ if($_POST){
  }
  echo $msg;
 }
+
+if(empty($json) == false) {
+ $msg = $json;
+}
+
 $strUrl = "https://api.line.me/v2/bot/message/push";
  
 $arrHeader = array();
@@ -33,10 +38,6 @@ $arrPostData = array();
 $arrPostData['to'] = "C38b5b940c47dade38c04eb701a98208b";
 $arrPostData['messages'][0]['type'] = "text";
 $arrPostData['messages'][0]['text'] = $msg ;
-
-if(empty($json) == false) {
- $msg = $json;
-}
  
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
