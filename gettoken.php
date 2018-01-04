@@ -35,14 +35,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "groupId = " .$arrJson['events'][0]['source']['groupId'];
-}else if($arrJson['events'][0]['message']['text'] == "3"){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['source'][0]['type'] = "group";
-  $arrPostData['source'][0]['groupId'] = "C38b5b940c47dade38c04eb701a98208b";
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = $arrJson['events'][0];
+  $arrPostData['messages'][0]['text'] = $arrJson['events'][0]['source']['groupId'];
 }
  
 $ch = curl_init();
