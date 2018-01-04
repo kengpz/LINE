@@ -22,28 +22,32 @@ if($arrJson['events'][0]['message']['text'] == "getuserid"){
 }else if($arrJson['events'][0]['message']['text'] == "btc"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['pairing'][0]['id'] = "1";
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "1";
 }else if($arrJson['events'][0]['message']['text'] == "eth"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['pairing'][0]['id'] = "21";
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "21";
 }else if($arrJson['events'][0]['message']['text'] == "xrp"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['pairing'][0]['id'] = "25";
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "25";
 }else if($arrJson['events'][0]['message']['text'] == "omg"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['pairing'][0]['id'] = "26";
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "26";
 }else if($arrJson['events'][0]['message']['text'] == "evx"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['pairing'][0]['id'] = "28";
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "28";
 }
 
-$url_req = "https://linews.herokuapp.com/webhook/webhook.jsp";
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL,$url_req);
+curl_setopt($ch, CURLOPT_URL,$strUrl);
 curl_setopt($ch, CURLOPT_HEADER, false);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $arrHeader);
