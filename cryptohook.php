@@ -25,7 +25,8 @@ if($arrJson['events'][0]['message']['text'] == "getuserid"){
 }
 
 $post = [
- 'msg' => $pairing
+ 'msg' => $pairing,
+ 'action' => "getprice"
 ];
 
 $ch = curl_init();
