@@ -39,6 +39,14 @@ if($arrJson['events'][0]['message']['text'] == "getuserid"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "26";
+  $post = [
+    'msg' => '28'
+ ];
+ $ch = curl_init();
+ curl_setopt($ch, CURLOPT_URL, 'http://linews.herokuapp.com/webhook/webhook.jsp');
+ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+ $response = curl_exec($ch);
 }else if($arrJson['events'][0]['message']['text'] == "evx"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -54,7 +62,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $arrHeader);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($arrPostData));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-$result = curl_exec($ch);
+//$result = curl_exec($ch);
 curl_close ($ch);
  
 ?>
