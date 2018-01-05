@@ -30,7 +30,7 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'http://linews.herokuapp.com/webhook/webhook.jsp');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
-$response = curl_exec($ch);
+if($pairing != "0") $response = curl_exec($ch);
 curl_close ($ch);
 
 ?>
