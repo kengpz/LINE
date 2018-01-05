@@ -18,6 +18,8 @@ if($arrJson['events'][0]['message']['text'] == "getuserid"){
   $pairing = "26";
 }else if($arrJson['events'][0]['message']['text'] == "evx"){
   $pairing = "28";
+}else if($arrJson['events'][0]['message']['text'] == "allcur"){
+  $pairing = "all";
 }else {
  $pairing = "0";
 }
