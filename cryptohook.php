@@ -16,9 +16,11 @@ if($arrJson['events'][0]['message']['text'] == "getuserid"){
   $pairing = "25";
 }else if($arrJson['events'][0]['message']['text'] == "omg"){
   $pairing = "26";
+}else if($arrJson['events'][0]['message']['text'] == "pnd"){
+  $pairing = "14";
 }else if($arrJson['events'][0]['message']['text'] == "evx"){
   $pairing = "28";
-}else if($arrJson['events'][0]['message']['text'] == "allcur"){
+}else if($arrJson['events'][0]['message']['text'] == "aaa"){
   $pairing = "all";
 }else {
  $pairing = "0";
