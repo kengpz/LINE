@@ -22,8 +22,10 @@ if($arrJson['events'][0]['message']['text'] == "getuserid"){
   $pairing = "28";
 }else if($arrJson['events'][0]['message']['text'] == "aaa"){
   $pairing = "all";
+}else if($arrJson['events'][0]['message']['text'] == "IFTTT: aaa"){
+  $pairing = "all";
 }else {
- $pairing = "0";
+ $pairing = "1";
 }
 
 $post = [
